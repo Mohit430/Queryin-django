@@ -5,11 +5,11 @@ from .models import Student
 def alldata(request):
     x=Student.objects.all()
     print(x)
-    y=Student.objects.filter(stu_name='Kratika')
+    y=Student.objects.filter(stu_name='mohits')
     print(y)  # return multiple object with same name and  no find same so they can return the empty objects
-    z=Student.objects.exclude(stu_name='Kratika')
+    z=Student.objects.exclude(stu_name='mohit')
     print(z)  #
-    p=Student.objects.filter(stu_name='kratika')
+    p=Student.objects.filter(stu_name='MOHIT')
     print(p)  #no find same so they can return the empty objects
     m=Student.objects.order_by("stu_name")
     print(m) #decending
